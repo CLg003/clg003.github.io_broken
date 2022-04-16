@@ -4,10 +4,14 @@ import ProjectItem from './ProjectItem';
 const ProjectList = () => {
 
     return (
-        <>
-            <p>Project List</p>
+        <div id="project-list">
             <ProjectItem />
-        </>
+            <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
+            <ProjectItem />
+        </div>
     );
 
 }

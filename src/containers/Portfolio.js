@@ -8,13 +8,15 @@ import Footer from '../components/Footer';
 const Portfolio = () => {
 
     return (
-        <>
+        <div id="portfolio">
             <Header />
-            <About />
-            <Projects />
-            <Contact />
+            <main>
+                <About />
+                <Projects />
+                <Contact />
+            </main>
             <Footer />
-        </>
+        </div>
     );
 }
 
