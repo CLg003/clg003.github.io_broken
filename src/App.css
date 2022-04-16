@@ -48,6 +48,14 @@ header > h1 {
    }
 }
 
+nav {
+  background-color: hotpink;
+  padding: 20px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
 nav > ul {
   list-style: none;
   width: 40%;
@@ -58,6 +66,10 @@ nav > ul {
 
 
 /* ABOUT */
+
+#about {
+  margin: 50px 0;
+}
 
 #about > p {
   width: 80%;
@@ -80,6 +92,10 @@ nav > ul {
 
 
 /* PROJECTS */
+
+#projects {
+  margin: 50px 0;
+}
 
 #project-list{
   display: flex;
@@ -122,6 +138,10 @@ nav > ul {
 
 
 /* CONTACT */
+
+#contact {
+  margin: 50px 0;
+}
 
 form {
   width: 60%;

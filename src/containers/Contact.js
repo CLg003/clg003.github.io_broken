@@ -4,7 +4,7 @@ import About from './About';
 const Contact = () => {
 
     return (
-        <>
+        <div id="contact">
             <h2>Contact</h2>
             <form>
                 <label htmlFor="name" id="name">Name *</label>
@@ -18,7 +18,7 @@ const Contact = () => {
                 <textarea name="message" rows="8" placeholder="Your message here *" />
                 <button type="submit">Send</button>
             </form>
-        </>
+        </div>
     );
 
 }
