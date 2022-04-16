@@ -9,10 +9,16 @@ import Footer from '../components/Footer';
 
 const Portfolio = () => {
 
+    const [selectedNav, setSelectedNav] = useState(null);
+
+    const focusSelectedNav = (clickedNav) => {
+        setSelectedNav(clickedNav);
+    }
+
     return (
             <div id="portfolio">
                 <Header />
-                <NavBar />
+                <NavBar selectedNav={selectedNav} focusSelectedNav={focusSelectedNav}/>
                 <main>
                     <About />
                     <hr/>
