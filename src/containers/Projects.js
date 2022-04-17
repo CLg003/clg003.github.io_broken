@@ -31,6 +31,10 @@ const Projects = () => {
         }
     }
 
+    // const updateLearnMore = function() {
+
+    // }
+
     return (
         <div id="projects">
             <h2>Projects</h2>

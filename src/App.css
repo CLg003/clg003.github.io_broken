@@ -145,11 +145,12 @@ nav > a.active {
   text-align: center;
   flex-basis: 30%;
   /* padding: 15px 0; */
-  margin: 5px;
+  margin: 2px;
   /* background-color: #000; */
   color: transparent;
   position: relative;
   /* border: 2px solid #000; */
+  /* border-radius: 10px; */
 }
 @media ( max-width: 1100px) {
   .project { 
@@ -166,7 +167,7 @@ nav > a.active {
   color: #fff;
   background-color: #000;
   /* opacity: 1; */
-  margin: 0 5px;
+  margin: 0 2px;
 }
 @media ( max-width: 1400px) {
   .project:hover { 
@@ -236,6 +237,63 @@ nav > a.active {
   background-color: #e31b6d;
   padding: 5px 10px;
   border: 1px solid #fff;
+}
+
+/* PROJECT DETAIL */
+
+.project-detail {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 0.5px solid #000;
+  /* border-radius: 20px; */
+  background-color: #fff;
+}
+
+.project-detail > p {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+.project-detail-images {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap row;
+  justify-content: center;
+}
+
+.project-detail-images > img {
+  width: 30%;
+  margin: 10px;
+  /* border-radius: 10px; */
+}
+@media ( max-width: 1100px) {
+  .project-detail-images > img { 
+    flex-basis: 45%; 
+  }
+}
+@media ( max-width: 600px) {
+  .project-detail-images > img { 
+    flex-basis: 90%; 
+   }
+}
+
+.project-detail > button {
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 0;
+  color:#fff;
+  background-color: #e31b6d;
+}
+
+.project-detail > button:hover {
+  color: #e31b6d;
+  background-color: #fff;
+  border: 1px solid #000;
 }
 
 
