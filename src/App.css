@@ -17,11 +17,13 @@ body {
 #portfolio {
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(#f8f9fa, #e9ecef);
 }
 
 main {
   width: 70%;
   margin: auto;
+  
 }
 
 h2 {
@@ -72,6 +74,7 @@ nav {
   margin: 0;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 
 nav > .links {
@@ -233,6 +236,27 @@ nav > a.active {
   background-color: #e31b6d;
   padding: 5px 10px;
   border: 1px solid #fff;
+}
+
+
+/* TECH STACK */
+
+#tech-stack {
+  margin: 70px 0;
+}
+
+#tech-stack-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap row;
+  width: 80%;
+  margin: auto;
+}
+
+#tech-stack-logos > img {
+  width: 80px;
+  margin: 10px;
 }
 
 
