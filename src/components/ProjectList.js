@@ -1,10 +1,10 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
 
-const ProjectList = ({projects, selectProject}) => {
+const ProjectList = ({projects, selectedProject, learnMore, selectProject}) => {
 
     const projectNodes = projects.map((project, index) => {
-        return <ProjectItem key={index} name={project.name} description={project.description} selectProject={selectProject}/>
+        return <ProjectItem key={index} index={index} name={project.name} type={project.type} description={project.description} projects={projects} selectedProject={selectedProject} learnMore={learnMore} selectProject={selectProject}/>
     });
 
     return (
