@@ -1,12 +1,21 @@
 import React from 'react';
 
-const ProjectItem = () => {
+const ProjectItem = ({name, description, selectProject}) => {
+
+    const image = require("../images/placeholder_code.jpeg");
+
+    const handleClick = () => {
+        selectProject();
+    }
 
     return (
         <div className="project">
-            <h3>Project Name</h3>
-            <p>Project description goes here.</p>
-            <img src={require('../images/placeholder_code.jpeg')}/>
+            <img src={image}/>
+            <div className="text-on-image">
+                <h3>{name}</h3>
+                <p className="plain-paragraph">{description}</p>
+                <p className="learn-more" onClick={handleClick}>Learn More</p>
+            </div>
         </div>
     );
 

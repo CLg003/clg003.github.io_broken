@@ -1,16 +1,15 @@
 import React from 'react';
 import ProjectItem from './ProjectItem';
 
-const ProjectList = () => {
+const ProjectList = ({projects, selectProject}) => {
+
+    const projectNodes = projects.map((project, index) => {
+        return <ProjectItem key={index} name={project.name} description={project.description} selectProject={selectProject}/>
+    });
 
     return (
         <div id="project-list">
-            <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
+            {projectNodes}
         </div>
     );
 
