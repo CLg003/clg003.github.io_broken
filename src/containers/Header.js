@@ -1,5 +1,5 @@
 import React from 'react';
-import headerLogo from '../images/header_1.png';
+import headerLogo from '../images/simon-berger-twukN12EN7c-unsplash.jpg';
 
 
 const Header = () => {
@@ -7,8 +7,8 @@ const Header = () => {
     return (
         <header id="header">
             <img src={headerLogo} alt="Claire Laing - Junior software developer"/>
-            {/* <h1>Claire Laing</h1>
-            <h2>Junior software developer</h2> */}
+            <h1>Claire <strong>Laing</strong></h1>
+            <h2>Junior software developer</h2>
         </header>
     );
 

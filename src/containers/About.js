@@ -8,11 +8,10 @@ const About = () => {
     return (
         <div id="about">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus sit amet luctus venenatis lectus. Sed augue lacus viverra vitae congue eu consequat ac. Vel facilisis volutpat est velit egestas dui id. Nunc sed id semper risus in. Mattis pellentesque id nibh tortor id aliquet. Est placerat in egestas erat imperdiet. Amet commodo nulla facilisi nullam vehicula ipsum a. Velit scelerisque in dictum non consectetur a. Massa vitae tortor condimentum lacinia. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Porttitor leo a diam sollicitudin tempor id eu.</p>
+            <p>I am a junior software developer with a background in broadcasting and libraries. I spent seven years in a creative-technical TV post-production role, developing strong organisational and interpersonal skills through working with clients on a range of productions. Following this I took a career break to be a full-time parent, during which time I continued my learning and development through volunteering roles and online education. On returning to work I spent several years as a library adviser with Edinburgh City Libraries, but I missed the creative challenges of working in the tech industry and began to explore other avenues. I have always been passionate about working with software but had never considered myself a potential programmer before signing up to my first coding course. As a natural problem solver, I quickly discovered that programming is both something that I enjoy and that suits my skillset, and I am excited about pursuing a career back in the tech industry as a software developer.</p>
             <div id="social-media">
                 <a href="https://github.com/CLg003" target="_blank"><img src={gitHubLogo} alt="GitHub logo"></img></a>
                 <a href="https://www.linkedin.com/in/claire-laing-b05007a4/" target="_blank"><img src={linkedInLogo} alt="LinkedIn logo"></img></a>
-                <a href="https://www.instagram.com/clairelaing003/" target="_blank"><img src={instagramLogo} alt="Instagram logo"></img></a>
             </div>
         </div>
     );
