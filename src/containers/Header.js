@@ -1,12 +1,14 @@
 import React from 'react';
+import headerLogo from '../images/header_1.png';
 
 
 const Header = () => {
 
     return (
         <header id="header">
-                <h1>Claire Laing</h1>
-                <h2>Junior software developer</h2>
+            <img src={headerLogo} alt="Claire Laing - Junior software developer"/>
+            {/* <h1>Claire Laing</h1>
+            <h2>Junior software developer</h2> */}
         </header>
     );
 

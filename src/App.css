@@ -23,6 +23,7 @@ body {
 main {
   width: 70%;
   margin: auto;
+  padding: 0;
   
 }
 
@@ -36,16 +37,24 @@ h2 {
 
 header {
   width: 100%;
-  margin: 0;
-  padding: 10px;
+  margin: 0 !important;
+  padding: 0;
+  /* padding: 10px; */
   text-align: center;
-  /* background-color: #e31b6d; */
-  height: 200px;
+  /* background-color: #d90368; */
+  background-color: #ff3333;
+  /* height: 370px; */
+  position: relative;
 }
 
 header > h1 {
   font-size: 100px;
   margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 10%;
+  left: 10%;
+  bottom: 35%;
 }
 @media ( max-width: 1100px) {
   header > h1 { 
@@ -62,16 +71,39 @@ header > h2 {
   color: #e31b6d;
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 10%;
+  left: 10%;
+  bottom: 15%;
 }
 
+header > img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* NAV BAR */
+
+/* #nav-container {
+  position: absolute;
+  top: 41%;
+  width: 100%;
+} */
+
 nav {
-  background-color: #000;
+  /* background-color: #000; */
+  background-color: #0f2d60;
   color: white;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  border-bottom: 2px solid #e31b6d;
-  margin: 0;
+  /* border-bottom: 2px solid #e31b6d; */
+  /* border-top: 3px solid #ff5757; */
+  border-bottom: 4px solid #ff5757;
+  margin: 0 !important;
   display: flex;
   justify-content: center;
   z-index: 10;
@@ -80,12 +112,14 @@ nav {
 nav > .links {
   width: 70%;
   margin: auto;
+  margin-top: 0;
 }
 
 nav > a {
   text-transform: uppercase;
+  font-weight: bold;
   padding: 10px 30px;
-
+  margin-top: 0;
 }
 
 nav > a:hover {
@@ -93,6 +127,7 @@ nav > a:hover {
 }
 
 nav > a.active {
+  /* font-weight: bold; */
   color: #e31b6d;
 }
 

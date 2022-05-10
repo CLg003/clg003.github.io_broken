@@ -14,7 +14,9 @@ const Portfolio = () => {
     return (
             <div id="portfolio">
                 <Header />
-                <NavBar />
+                {/* <div id="nav-container"> */}
+                    <NavBar />
+                {/* </div> */}
                 <main>
                     <About />
                     <hr/>
