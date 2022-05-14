@@ -1,5 +1,5 @@
 import React from 'react';
-import headerLogo from '../images/simon-berger-twukN12EN7c-unsplash.jpg';
+import headerLogo from '../images/simon-berger-twukN12EN7c-unsplash-crop.jpg';
 
 
 const Header = () => {

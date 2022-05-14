@@ -1,11 +1,11 @@
 import React from 'react';
 import ProjectDetail from './ProjectDetail';
 
-const ProjectItem = ({index, name, type, description, projects, selectProject, selectedProject, learnMore}) => {
+const ProjectItem = ({index, name, type, description, image, projects, selectProject, selectedProject, learnMore}) => {
 
     // const selectedProjectDetails = 
 
-    const image = require("../images/placeholder_code.jpeg");
+    // const image = require("../images/placeholder_code.jpeg");
 
     const handleClick = function() {
         // console.log(`selectedProject : ${(selectedProject ? selectedProject.name : null)}`);
@@ -21,7 +21,7 @@ const ProjectItem = ({index, name, type, description, projects, selectProject, s
             <ProjectDetail index={index} name={name} type={type} description={description} projects={projects} selectProject={selectProject} selectedProject={selectedProject} learnMore={learnMore}/>
             : 
             <div className="project">
-                <img src={image}/>
+                <img src={`${process.env.PUBLIC_URL}${image}`}/>
                 <div className="text-on-image">
                     <h3>{name}</h3>
                     <p className="plain-paragraph">{type}</p>

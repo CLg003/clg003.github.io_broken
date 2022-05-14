@@ -4,12 +4,12 @@ import ProjectList from '../components/ProjectList';
 const Projects = () => {
 
     const projects = [
-        {name: "Project 1", type: "Project type here", description: "Project description here."},
-        {name: "Project 2", type: "Project type here", description: "Project description here."},
-        {name: "Project 3", type: "Project type here", description: "Project description here."},
-        {name: "Project 4", type: "Project type here", description: "Project description here."},
-        {name: "Project 5", type: "Project type here", description: "Project description here."},
-        {name: "Project 6", type: "Project type here", description: "Project description here."}
+        {name: "Project 1", type: "Project type here", description: "Project description here.", image: "/assets/images/project_videos_and_screenshots/nba_ss/pulse_home_page_ss.png"},
+        {name: "Project 2", type: "Project type here", description: "Project description here.", image: "/assets/images/project_videos_and_screenshots/nba_ss/nba_main_ss.png"},
+        {name: "Project 3", type: "Project type here", description: "Project description here.", image: "/assets/images/project_videos_and_screenshots/nba_ss/triolingo_lesson2_reset_ss.png"}
+        // {name: "Project 4", type: "Project type here", description: "Project description here."},
+        // {name: "Project 5", type: "Project type here", description: "Project description here."},
+        // {name: "Project 6", type: "Project type here", description: "Project description here."}
     ];
 
     const [selectedProject, setSelectedProject] = useState(null);
