@@ -201,21 +201,29 @@ nav > a.active {
 
 .project {
   text-align: center;
-  flex-basis: 30%;
+  flex-basis: 45%;
   margin: 10px;
   color: transparent;
   position: relative;
   border-radius: 10px;
 }
-@media ( max-width: 1100px) {
+
+@media ( max-width: 1200px) {
   .project { 
-    flex-basis: 40%; 
+    flex-basis: 60%; 
+   }
+}
+
+@media ( max-width: 900px) {
+  .project { 
+    flex-basis: 75%; 
   }
 }
-@media ( max-width: 600px) {
+
+@media ( max-width: 700px) {
   .project { 
     flex-basis: 90%; 
-   }
+  }
 }
 
 .project:hover {
@@ -255,19 +263,14 @@ nav > a.active {
   position: absolute;
   right: 10%;
   left: 10%;
-  bottom: 10%;
+  bottom: 20%;
 }
 
 .text-on-image > h3 {
   text-transform: uppercase;
 }
 
-.text-on-image > .plain-paragraph {
-  /* padding-bottom: 5px; */
-}
-
 .project:hover > .text-on-image > h3 {
-  /* color: #ee6c4d; */
   color: #fdb92e
 }
 
@@ -299,18 +302,59 @@ nav > a.active {
   width: 90%;
   margin: auto;
   margin-top: 20px;
-  padding: 20px;
+  padding: 20px 50px;
   text-align: center;
-  border: 0.5px solid #1e4e72;
+  border: 1px solid #3a668c;
   border-radius: 20px;
   background-color: #fff;
 }
 
-.project-detail > p {
-  text-align: left;
-  width: 90%;
+.project-detail h3 {
+  text-transform: uppercase;
+  color:#3a668c;
+}
+
+.project-detail h4 {
+  text-transform: uppercase;
+  color: #ee6c4d
+}
+
+.project-description-and-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: wrap row;
+}
+
+.project-description {
+  max-width: 40%;
   margin: auto;
-  padding: 20px;
+  text-align: left;
+}
+
+@media ( max-width: 1350px) {
+  .project-description { 
+    max-width: 100%; 
+  }
+}
+
+.project-description a {
+  color:#ee6c4d;
+  text-decoration: none;
+}
+
+.project-description a:hover {
+  color: #1e4e72;
+}
+
+.video {
+  background-color: #fdb92e;
+  border-radius: 10px;
+  border: 1px solid #3a668c;
+  margin: auto;
+  padding: 20px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .project-detail-images {
@@ -324,6 +368,7 @@ nav > a.active {
   width: 30%;
   margin: 10px;
   border-radius: 10px;
+  border: 1px solid #3a668c;
 }
 @media ( max-width: 1100px) {
   .project-detail-images > img { 
@@ -333,12 +378,12 @@ nav > a.active {
 @media ( max-width: 600px) {
   .project-detail-images > img { 
     flex-basis: 90%; 
-   }
+  }
 }
 
 .project-detail > button {
   text-transform: uppercase;
-  /* font-weight: bold; */
+  font-weight: bold;
   border: 1px solid #ee6c4d;
   border-radius: 10px;
   color: #1e4e72;
@@ -348,7 +393,6 @@ nav > a.active {
 .project-detail > button:hover {
   color: #fff;
   background-color: #ee6c4d;
-  /* border: 1px solid #000; */
 }
 
 
