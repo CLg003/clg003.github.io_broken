@@ -24,7 +24,7 @@ const Portfolio = () => {
                     <hr/>
                     <TechStack />
                     <hr/>
-                    <Contact />
+                    {/* <Contact /> */}
                 </main>
                 <Footer />
             </div>

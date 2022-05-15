@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player';
 
 const ProjectDetail = ({index, name, type, description, projects, selectProject, selectedProject, learnMore}) => {
     
