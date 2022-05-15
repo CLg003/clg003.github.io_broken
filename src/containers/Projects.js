@@ -4,31 +4,44 @@ import ProjectList from '../components/ProjectList';
 const Projects = () => {
 
     const projects = [
-        {name: "Pulse Gym Management", type: "Python full-stack web app", description: "Project description here.", image: "/assets/images/project_videos_and_screenshots/pulse_ss/pulse_home_page_ss.png", detailImages: [1, 2, 3]},
-        {name: "NBA 75", type: "React/REST API full-stack web app", description: "Project description here.", image: "/assets/images/project_videos_and_screenshots/nba_ss/nba_main_ss.png"},
-        {name: "Triolingo", type: "React full-stack web app", description: "Project description here.", image: "/assets/images/project_videos_and_screenshots/triolingo_ss/triolingo_lesson2_reset_ss.png"}
+        {name: "Pulse Gym Management", 
+        type: "Python full-stack web app", 
+        description: "Project description here.", 
+        image: "/assets/images/project_videos_and_screenshots/pulse_ss/pulse_home_page_ss.png", 
+        detailImages: [1, 2, 3], 
+        video:"/assets/images/project_videos_and_screenshots/pulse_video_1080.mov"
+        },
+        {name: "NBA 75", 
+        type: "React/REST API full-stack web app", 
+        description: "Project description here.", 
+        image: "/assets/images/project_videos_and_screenshots/nba_ss/nba_main_ss.png", 
+        detailImages: [1, 2, 3], 
+        video:"/assets/images/project_videos_and_screenshots/nba_video_1080.mov"
+        },
+        {name: "Triolingo", 
+        type: "React full-stack web app", 
+        description: "Project description here.", 
+        image: "/assets/images/project_videos_and_screenshots/triolingo_ss/triolingo_lesson2_reset_ss.png", 
+        detailImages: [1, 2, 3], 
+        video:"/assets/images/project_videos_and_screenshots/triolingo_video_1080.mov"
+        }
         // {name: "Project 4", type: "Project type here", description: "Project description here."},
         // {name: "Project 5", type: "Project type here", description: "Project description here."},
         // {name: "Project 6", type: "Project type here", description: "Project description here."}
     ];
 
-    const [selectedProject, setSelectedProject] = useState(null);
-    const [learnMore, setLearnMore] = useState(false);
+    const [selectedProject, setSelectedProject] = useState(1);
+    // const [learnMore, setLearnMore] = useState(false);
 
     // useEffect(() => {setLearnMore(true)}, [selectedProject]);
     // useEffect(() => {setLearnMore(false)}, [!selectedProject]);
 
     const selectProject = function(index) {
-        const projectToSelect = projects[index];
-        if (projectToSelect !== selectedProject || !projectToSelect) {
-            setSelectedProject(projectToSelect);
-            setLearnMore(true);
-            console.log('selectedProject: ' + selectedProject.name);
-            console.log('learnMore: ' + learnMore);
-        } else if (projectToSelect === selectedProject) {
-            setSelectedProject(null);
-            setLearnMore(false);
-        }
+        setSelectedProject(index);
+    }
+
+    const clearSelectedProject = function(){
+        setSelectedProject(null);
     }
 
     // const updateLearnMore = function() {
@@ -38,7 +51,7 @@ const Projects = () => {
     return (
         <div id="projects">
             <h2>Projects</h2>
-            <ProjectList projects={projects} selectedProject={selectedProject} learnMore={learnMore} selectProject={selectProject}/>
+            <ProjectList projects={projects} selectedProject={selectedProject} selectProject={selectProject} clearSelectedProject={clearSelectedProject}/>
         </div>
     );
 

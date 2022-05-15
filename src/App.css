@@ -231,7 +231,7 @@ nav > a.active {
 }
 
 .project:hover > img {
-  opacity: 0.1;
+  opacity: 0.05;
   transition: .2s ease;
 }
 
@@ -301,8 +301,8 @@ nav > a.active {
   margin-top: 20px;
   padding: 20px;
   text-align: center;
-  border: 0.5px solid #000;
-  /* border-radius: 20px; */
+  border: 0.5px solid #1e4e72;
+  border-radius: 20px;
   background-color: #fff;
 }
 
@@ -323,7 +323,7 @@ nav > a.active {
 .project-detail-images > img {
   width: 30%;
   margin: 10px;
-  /* border-radius: 10px; */
+  border-radius: 10px;
 }
 @media ( max-width: 1100px) {
   .project-detail-images > img { 
@@ -338,16 +338,17 @@ nav > a.active {
 
 .project-detail > button {
   text-transform: uppercase;
-  border: 1px solid #fff;
-  border-radius: 0;
-  color:#fff;
-  background-color: #e31b6d;
+  /* font-weight: bold; */
+  border: 1px solid #ee6c4d;
+  border-radius: 10px;
+  color: #1e4e72;
+  background-color: #fff;
 }
 
 .project-detail > button:hover {
-  color: #e31b6d;
-  background-color: #fff;
-  border: 1px solid #000;
+  color: #fff;
+  background-color: #ee6c4d;
+  /* border: 1px solid #000; */
 }
 
 
@@ -467,6 +468,7 @@ footer {
   margin: 100px 0;
   background-color: #3a668c;
   color: #fdb92e;
+  font-weight: bold;
   text-align: center;
   height: 100px;
 }

@@ -7,7 +7,7 @@ import htmlLogo from '../images/tech_stack/html.png';
 import javascriptLogo from '../images/tech_stack/javascript.jpeg';
 import javaLogo from '../images/tech_stack/java.png';
 import node_jsLogo from '../images/tech_stack/node_js.png';
-import pipLogo from '../images/tech_stack/pip.jpeg';
+import pipLogo from '../images/tech_stack/pip.png';
 import postgresqlLogo from '../images/tech_stack/postgresql.png';
 import pythonLogo from '../images/tech_stack/python.png';
 import reactLogo from '../images/tech_stack/react.png';
@@ -17,6 +17,7 @@ import vs_codeLogo from '../images/tech_stack/vs_code.png';
 import mongoDBLogo from '../images/tech_stack/mongodb.png';
 import insomniaLogo from '../images/tech_stack/insomnia.png';
 import expressLogo from '../images/tech_stack/express.png';
+import intellijLogo from '../images/tech_stack/intellij.png';
 
 const TechStack = () => {
     return (
@@ -45,7 +46,7 @@ const TechStack = () => {
                 </div>
                 <div className="tech">
                     <img src={pipLogo} alt="pipLogo"/>
-                    <p>Flask & Jinja</p>
+                    <p>Flask/Jinja</p>
                 </div>
                 <div className="tech">
                     <img src={node_jsLogo} alt="node_jsLogo"/>
@@ -74,6 +75,10 @@ const TechStack = () => {
                 <div className="tech">
                     <img src={vs_codeLogo} alt="vs_codeLogo"/>
                     <p>VSCode</p>
+                </div>
+                <div className="tech">
+                    <img src={intellijLogo} alt="intellijLogo"/>
+                    <p>IntelliJ</p>
                 </div>
                 <div className="tech">
                     <img src={postgresqlLogo} alt="postgresqlLogo"/>
